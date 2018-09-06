@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.picturetobase64.MainActivity"
+    android:orientation="vertical"
+    android:background="#F0F8FF">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/showImage"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@mipmap/select"
+                android:scaleType="fitXY"
+                android:id="@+id/selectImage"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@mipmap/web"
+                android:scaleType="fitXY"
+                android:id="@+id/openWeb"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@mipmap/scan"
+                android:scaleType="fitXY"
+                android:id="@+id/work"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/showPath"
+        android:maxLines = "1000"
+        android:scrollbars = "vertical"
+        android:enabled="true"
+        android:textIsSelectable="true"
+        android:focusable="true"
+        android:longClickable="true"
+        />
+
+
+</LinearLayout>
